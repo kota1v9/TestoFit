@@ -1,4 +1,5 @@
 title: TestoFit
-description: Fitness, testosterone, and lifestyle optimization
-baseurl: "" # leave this empty for GitHub Pages
-url: "https://kota1v9.github.io"
+description: A testosterone optimization resource
+theme: minima
+markdown: kramdown
+permalink: /:title/
