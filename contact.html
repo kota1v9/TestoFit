@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - TestoFit</title>
+  <title>Contact | TestoFit</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -11,6 +11,9 @@
       margin: 0;
       background-color: #f4f4f4;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background-color: #111;
@@ -28,16 +31,38 @@
       text-decoration: underline;
     }
     main {
-      max-width: 600px;
-      margin: auto;
-      padding: 2rem;
+      flex: 1;
+      max-width: 700px;
+      margin: 2rem auto;
       background: white;
+      padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 0 8px rgba(0,0,0,0.05);
       text-align: center;
     }
+    h1 {
+      font-weight: 800;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+    .email {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #00b894;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.3s ease;
+      text-decoration: underline;
+    }
+    .email:hover {
+      color: #019875;
+    }
     footer {
-      margin-top: 2rem;
       padding: 1rem 0;
       background-color: #f9f9f9;
       border-top: 1px solid #ddd;
@@ -60,13 +85,21 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <h2>Contact Us</h2>
-    <p>If you have questions, feedback, or want to get in touch, feel free to email us:</p>
-    <p><a href="mailto:dakotaisok1@gmail.com" style="color:#111; font-weight:600; text-decoration:none;">dakotaisok1@gmail.com</a></p>
+    <h1>Get in Touch</h1>
+    <p>Have questions, suggestions, or want to collaborate? Feel free to reach out! While we avoid exposing direct email links to reduce spam, you can easily email us by copying the address below or clicking to reveal it.</p>
+    <div 
+      class="email" 
+      title="Click to copy email"
+      onclick="navigator.clipboard.writeText('dakotaisok1@gmail.com').then(() => alert('Email copied to clipboard!'))"
+    >
+      dakotaisok1 [at] gmail [dot] com
+    </div>
+    <p><small>Click the email above to copy it to your clipboard.</small></p>
   </main>
+
   <footer>
-    <p><em>Disclosure: Some of the links on this site are affiliate links. If you make a purchase through these links, we may earn a commission at no extra cost to you.</em></p>
     <p>&copy; 2025 TestoFit. All rights reserved.</p>
   </footer>
 </body>
