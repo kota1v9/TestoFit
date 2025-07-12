@@ -58,9 +58,13 @@
       user-select: none;
       transition: color 0.3s ease;
       text-decoration: underline;
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
     }
     .email:hover {
       color: #019875;
+      background-color: #e0f2f1;
     }
     footer {
       padding: 1rem 0;
@@ -88,15 +92,15 @@
 
   <main>
     <h1>Get in Touch</h1>
-    <p>Have questions, suggestions, or want to collaborate? Feel free to reach out! While we avoid exposing direct email links to reduce spam, you can easily email us by copying the address below or clicking to reveal it.</p>
+    <p>Have questions, suggestions, or want to collaborate? Feel free to reach out! Click the word below to copy our email address to your clipboard.</p>
     <div 
       class="email" 
       title="Click to copy email"
       onclick="navigator.clipboard.writeText('dakotaisok1@gmail.com').then(() => alert('Email copied to clipboard!'))"
     >
-      dakotaisok1 [at] gmail [dot] com
+      Gmail
     </div>
-    <p><small>Click the email above to copy it to your clipboard.</small></p>
+    <p><small>Click “Gmail” above to copy the email address.</small></p>
   </main>
 
   <footer>
