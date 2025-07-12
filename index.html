@@ -3,179 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Testosterone & Fitness Blog | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <title>TestoFit - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    /* Base reset */
-    * {
-      box-sizing: border-box;
-    }
     body {
-      margin: 0; padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #fff;
-      color: #222;
-      line-height: 1.6;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #004999;
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
     }
     header {
-      background: #f9fafb;
-      padding: 1.5rem 2rem;
-      border-bottom: 1px solid #eaeaea;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      background-color: #111;
+      color: white;
+      padding: 1rem;
+      text-align: center;
     }
-    .logo {
-      font-weight: 700;
-      font-size: 1.5rem;
-      letter-spacing: 1.2px;
-      color: #0077cc;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0; padding: 0;
-      display: flex;
-      gap: 1.6rem;
-    }
-    nav li {
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
       font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
     }
     h1 {
-      font-weight: 700;
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      color: #111;
-    }
-    p.lead {
-      font-size: 1.2rem;
-      color: #444;
-      margin-bottom: 2.5rem;
-      max-width: 600px;
-    }
-    /* Blog preview cards */
-    .posts {
-      display: grid;
-      gap: 2rem;
-    }
-    article.post {
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 1.5rem 1.8rem;
-      box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
-      transition: box-shadow 0.3s ease;
-      background: white;
-    }
-    article.post:hover {
-      box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
-    }
-    article.post h2 {
       margin-top: 0;
-      margin-bottom: 0.6rem;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #0077cc;
-    }
-    article.post .date {
-      font-size: 0.85rem;
-      color: #888;
-      margin-bottom: 1rem;
-    }
-    article.post p {
-      margin: 0;
-      color: #444;
-    }
-    article.post a.read-more {
-      display: inline-block;
-      margin-top: 1rem;
-      font-weight: 600;
-      color: #0077cc;
-    }
-    article.post a.read-more:hover {
-      color: #004999;
     }
     footer {
+      background-color: #111;
+      color: white;
       text-align: center;
-      padding: 2rem 1rem;
-      color: #666;
-      font-size: 0.9rem;
-      border-top: 1px solid #eaeaea;
-      margin-top: 3rem;
-      user-select: none;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      nav ul {
-        gap: 1rem;
-      }
-      main {
-        margin: 2rem 1rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="logo">TestoFit Blog</div>
+    <h1>TestoFit</h1>
     <nav>
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-
   <main>
-    <h1>Welcome to TestoFit Blog</h1>
-    <p class="lead">Your source for expert advice on testosterone health, fitness tips, nutrition, and building strength naturally.</p>
-
-    <section class="posts" aria-label="Latest blog posts">
-
-      <article class="post">
-        <h2><a href="article1.html">5 Natural Ways to Boost Testosterone Levels</a></h2>
-        <div class="date">July 12, 2025</div>
-        <p>Discover effective lifestyle changes and natural supplements that can help increase your testosterone levels without harmful side effects.</p>
-        <a href="article1.html" class="read-more">Read More →</a>
-      </article>
-
-      <article class="post">
-        <h2><a href="article2.html">How Strength Training Impacts Testosterone and Muscle Growth</a></h2>
-        <div class="date">June 28, 2025</div>
-        <p>Strength training builds muscle and naturally boosts testosterone production. Learn the best routines and recovery strategies.</p>
-        <a href="article2.html" class="read-more">Read More →</a>
-      </article>
-
-      <article class="post">
-        <h2><a href="article3.html">The Role of Nutrition in Testosterone Health</a></h2>
-        <div class="date">June 10, 2025</div>
-        <p>Nutrition is vital for hormone balance. Discover which foods promote healthy testosterone levels and which to avoid.</p>
-        <a href="article3.html" class="read-more">Read More →</a>
-      </article>
-
-    </section>
+    <h2>Welcome to TestoFit</h2>
+    <p>Your go-to blog for testosterone, fitness, and men’s health insights.</p>
+    <p>Explore expert guides, nutrition tips, workout routines, and more.</p>
   </main>
-
   <footer>
-    &copy; 2025 TestoFit Blog. All rights reserved.
+    &copy; 2025 TestoFit. All rights reserved.
   </footer>
-
 </body>
 </html>
