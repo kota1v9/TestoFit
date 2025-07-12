@@ -1,18 +1,19 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | TestoFit</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Outfit', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f4f4f4;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background-color: #111;
@@ -24,23 +25,41 @@
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: 600;
     }
     nav a:hover {
       text-decoration: underline;
     }
     main {
+      flex: 1;
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
     }
     footer {
-      background-color: #111;
-      color: white;
+      padding: 1rem 0;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.9rem;
       text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    }
+    footer p {
+      margin: 0.5rem 0;
     }
   </style>
 </head>
@@ -50,12 +69,21 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <h2>About TestoFit</h2>
-    <p>TestoFit is a blog dedicated to exploring testosterone, fitness, and men's health. We offer honest content, lifestyle tips, and guides to help you optimize your physical and mental performance.</p>
-    <p>Whether you're a fitness enthusiast, biohacker, or just someone curious about how hormones influence your life, TestoFit is your go-to resource.</p>
+    <h1>About TestoFit</h1>
+    <p>Welcome to TestoFit, your trusted resource for all things related to testosterone health, fitness, and overall wellness. Our mission is to provide clear, science-backed information and practical tips to help you optimize your hormone health naturally through nutrition, exercise, and lifestyle.</p>
+    <p>We understand that testosterone plays a vital role in muscle growth, energy levels, libido, and mental clarity. That’s why we focus on delivering content that empowers you to make informed decisions about your health journey, including product recommendations supported by our affiliate partnerships to help you find quality supplements and gear.</p>
+    <p>Whether you’re just starting your fitness journey or looking to fine-tune your regimen, TestoFit is here to guide you with well-researched articles, routines, and product reviews designed to boost your confidence and results.</p>
+    <p>Thank you for visiting TestoFit. We’re excited to be part of your path to better health and vitality!</p>
   </main>
+
   <footer>
+    <p>&copy; 2025 TestoFit. All rights reserved.</p>
+  </footer>
+</body>
+</html>
