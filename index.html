@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TestoFit - Home</title>
+  <title>TestoFit - Natural Testosterone & Fitness Tips</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -28,7 +28,7 @@
       text-decoration: underline;
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
       background: white;
@@ -37,20 +37,44 @@
     }
     h1 {
       margin-top: 0;
+      font-weight: 800;
+      font-size: 2.8rem;
     }
-    section h3 {
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .featured-article {
+      background: #111;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    ul li {
-      margin-bottom: 0.5rem;
+    .featured-article h2 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+    .featured-article p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background: #00b894;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background: #019875;
     }
     footer {
-      margin-top: 2rem;
+      margin-top: 3rem;
       padding: 1rem 0;
       background-color: #f9f9f9;
       border-top: 1px solid #ddd;
@@ -77,21 +101,16 @@
     </nav>
   </header>
   <main>
-    <h2>Welcome to TestoFit</h2>
-    <p>Your go-to source for testosterone, fitness, and men’s health insights.</p>
-    <p>Explore expert guides, nutrition tips, workout routines, and more.</p>
-
-    <section>
-      <h3>Latest Articles</h3>
-      <ul>
-        <li><a href="testosterone-guide.html">Ultimate Guide to Testosterone</a></li>
-        <li><a href="foods-that-boost-testosterone.html">Top 10 Foods That Boost Testosterone</a></li>
-        <li><a href="fitness-routine-for-men.html">Best Fitness Routine for Men in Their 20s & 30s</a></li>
-      </ul>
+    <h1>Welcome to TestoFit</h1>
+    <p>Your go-to source for natural testosterone tips, fitness advice, and health insights to help you look, feel, and perform your best.</p>
+    <section class="featured-article">
+      <h2>Featured Article: Top 5 Foods That Boost Testosterone</h2>
+      <p>Discover the best nutrient-packed foods that naturally support healthy testosterone levels — including eggs, oysters, fatty fish, avocado oil, and garlic supplements.</p>
+      <a href="foods-that-boost-testosterone.html" class="btn" target="_blank" rel="noopener noreferrer">Read the Full Article</a>
     </section>
   </main>
   <footer>
-    <p><em>Disclosure: Some of the links on this site are affiliate links. If you make a purchase through these links, we may earn a commission at no extra cost to you.</em></p>
+    <p><em>Disclosure: Some links are affiliate links. Purchases may earn us a commission at no extra cost to you.</em></p>
     <p>&copy; 2025 TestoFit. All rights reserved.</p>
   </footer>
 </body>
