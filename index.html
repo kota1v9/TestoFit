@@ -38,27 +38,21 @@
     h1 {
       margin-top: 0;
       font-weight: 800;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
     p {
       font-size: 1.15rem;
       line-height: 1.6;
-      margin-bottom: 2rem;
     }
     .featured-article {
       background: #111;
       color: white;
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
     }
     .featured-article h2 {
       margin-top: 0;
-      font-weight: 700;
-    }
-    .featured-article p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
     }
     .btn {
       background: #00b894;
@@ -68,10 +62,33 @@
       font-weight: 600;
       border-radius: 6px;
       display: inline-block;
-      transition: background-color 0.3s ease;
+      margin-top: 10px;
     }
     .btn:hover {
       background: #019875;
+    }
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #00b894;
+    }
+    .card a:hover {
+      text-decoration: underline;
     }
     footer {
       margin-top: 3rem;
@@ -102,15 +119,34 @@
   </header>
   <main>
     <h1>Welcome to TestoFit</h1>
-    <p>Your go-to source for natural testosterone tips, fitness advice, and health insights to help you look, feel, and perform your best.</p>
+    <p>Your go-to source for natural testosterone tips, fitness insights, and tools to help you build a stronger, better version of yourself.</p>
+
     <section class="featured-article">
-      <h2>Featured Article: Top 5 Foods That Boost Testosterone</h2>
-      <p>Discover the best nutrient-packed foods that naturally support healthy testosterone levels — including eggs, oysters, fatty fish, avocado oil, and garlic supplements.</p>
-      <a href="foods-that-boost-testosterone.html" class="btn" target="_blank" rel="noopener noreferrer">Read the Full Article</a>
+      <h2>🔥 Featured: Top 5 Foods That Boost Testosterone</h2>
+      <p>Discover the best foods to naturally support testosterone — including eggs, oysters, garlic supplements, and more.</p>
+      <a href="foods-that-boost-testosterone.html" class="btn" target="_blank" rel="noopener noreferrer">Read the Article</a>
+    </section>
+
+    <section>
+      <h2>More Articles</h2>
+      <div class="article-grid">
+        <div class="card">
+          <h3><a href="importance-of-sleep.html">Why Sleep Is Crucial for Testosterone</a></h3>
+          <p>Lack of sleep kills testosterone production. Here's what to do about it.</p>
+        </div>
+        <div class="card">
+          <h3><a href="testosterone-and-training.html">Best Training Style for T-Level Boost</a></h3>
+          <p>Build your workouts around movements that naturally increase testosterone.</p>
+        </div>
+        <div class="card">
+          <h3><a href="morning-routine.html">A Testosterone-Optimized Morning Routine</a></h3>
+          <p>Start your day like a high-performer. Light, movement, protein — here's how.</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    <p><em>Disclosure: Some links are affiliate links. Purchases may earn us a commission at no extra cost to you.</em></p>
+    <p><em>Disclosure: Some links are affiliate links. We may earn a commission if you purchase through them, at no extra cost to you.</em></p>
     <p>&copy; 2025 TestoFit. All rights reserved.</p>
   </footer>
 </body>
